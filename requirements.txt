@@ -7,5 +7,6 @@
 
 lxml==3.4.4
 cssselect==0.9.1
+beautifulsoup4==4.2.0
 selenium==2.47.1
 splinter>=0.7.3
