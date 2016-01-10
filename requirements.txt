@@ -8,6 +8,4 @@
 lxml==3.4.4
 cssselect==0.9.1
 selenium==2.47.1
-splinter==0.7.3
-phantomjs
-firefox
+splinter>=0.7.3
