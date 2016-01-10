@@ -18,4 +18,4 @@ with Browser("phantomjs") as browser:
         back = browser.find_by_value('Back').click()
         num_sheriff = row.find('td').find_next('td').text.strip()
         print(num_sheriff)
-        scraperwiki.sqlite.save(unique_keys=['num_sheriff'], data={'num_sheriff': num_sheriff, 'sales_date': sales_date, 'address': address, 'approx_judgment': approx_judgment, 'redemption': redemption}
+        scraperwiki.sqlite.save(unique_keys=['num_sheriff'], data={'num_sheriff': num_sheriff, 'sales_date': sales_date, 'address': address, 'approx_judgment': approx_judgment, 'redemption': redemption})
