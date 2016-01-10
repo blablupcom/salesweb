@@ -1,5 +1,12 @@
+# -*- coding: utf-8 -*-
+import sys
+reload(sys)
+sys.setdefaultencoding("utf-8")
 from splinter import Browser
 import scraperwiki
+from bs4 import BeautifulSoup as bs
+import re
+
 
 with Browser("phantomjs") as browser:
     url = 'http://salesweb.civilview.com/Default.aspx?id=01230'
