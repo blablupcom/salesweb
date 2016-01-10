@@ -1,4 +1,5 @@
 from splinter import Browser
+import scraperwiki
 
 with Browser("phantomjs") as browser:
 	url = 'http://salesweb.civilview.com/Default.aspx?id=01230'
