@@ -44,7 +44,7 @@ def salesweb():
                 street_address = page_detail_soup.find('td', text=re.compile('Address')).find_next('td').find('br').previousSibling.strip()
                 search_address = street_address+' '+unit
                 address = street_address+' '+unit+' '+page_detail_soup.find('td', text=re.compile('Address')).find_next('td').find('br').find_next('br').nextSibling.strip()
-            with Browser("phantomjs") as browser:
+            with Browser("phantomjs") as assess_browser:
                 assess_url = 'http://web.assess.co.polk.ia.us/cgi-bin/web/tt/form.cgi?tt=query/basic/homepage&submit_form=1&'
                 assess_browser.visit(assess_url)
                 print search_address
