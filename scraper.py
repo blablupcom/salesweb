@@ -47,7 +47,7 @@ def salesweb():
             with Browser("phantomjs") as assess_browser:
                 assess_url = 'http://web.assess.co.polk.ia.us/cgi-bin/web/tt/form.cgi?tt=query/basic/homepage&submit_form=1&'
                 assess_browser.visit(assess_url)
-                print search_address
+          
                 if not search_address:
                     mailing_address = geoparcel = total = ''
                 else:
